@@ -30,6 +30,8 @@
     "sass-loader": "^6.0.7",
     "style-loader": "^0.19.0",
     "url-loader": "^0.6.2",
+    "vue-loader": "^13.7.3",
+    "vue-template-compiler": "^2.6.12",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.3"
   }

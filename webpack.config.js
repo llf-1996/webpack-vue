@@ -40,7 +40,9 @@ module.exports = {
       // 配置处理字体文件的第三方loader规则
       {test: /\.(ttf|eot|svg|woff|woff2)$/, use: 'url-loader'},
       // 处理高级js
-      {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/}
+      {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/},
+      // 处理.vue
+      {test: /\.vue$/, use: 'vue-loader'}
     ]
   },
   resolve: {
