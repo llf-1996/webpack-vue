@@ -45,10 +45,10 @@ module.exports = {
       {test: /\.vue$/, use: 'vue-loader'}
     ]
   },
-  resolve: {
-    alias: {
-      // 设置vue被导入时候的包的路径
-      'vue$': 'vue/dist/vue.js'
-    }
-  }
+  // resolve: {
+  //   alias: {
+  //     // 设置vue被导入时候的包的路径
+  //     'vue$': 'vue/dist/vue.js'
+  //   }
+  // }
 }
