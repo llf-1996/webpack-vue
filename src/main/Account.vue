@@ -12,6 +12,10 @@
 
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+body {
+  div {
+    font-style: italic;
+  }
+}
 </style>
