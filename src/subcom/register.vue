@@ -1,5 +1,7 @@
 <template>
-  <div>Account组件</div>
+  <div>
+    <div>register</div>
+  </div>
 </template>
 
 <script>
