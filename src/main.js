@@ -1,5 +1,5 @@
 // 在webpack中导入vue
-import Vue from '../node_modules/vue/dist/vue.js'
+import Vue from 'vue'
 
 var vm = new Vue({
   el: '#app',

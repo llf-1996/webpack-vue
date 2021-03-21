@@ -42,5 +42,11 @@ module.exports = {
       // 处理高级js
       {test: /\.js$/, use: 'babel-loader', exclude: /node_modules/}
     ]
+  },
+  resolve: {
+    alias: {
+      // 设置vue被导入时候的包的路径
+      'vue$': 'vue/dist/vue.js'
+    }
   }
 }
