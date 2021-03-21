@@ -8,3 +8,7 @@ cnm install vue@2
 cnpm install vue-loader@13 vue-template-compiler@2 -D
 ```
 
+## vue-router
+```bash
+cnpm i vue-router -S
+```
