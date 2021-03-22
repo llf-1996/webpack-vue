@@ -17,4 +17,31 @@ cnpm i vue-router -S
 ```bash
 cnpm i mint-ui -S
 ```
+#### 按需导入
+```bash
+cnpm install babel-plugin-component -D
+```
+* .babelrc
+```json
+{
+  ...
+  "plugins": [
+    ...
+    ["component", [
+      {
+        "libraryName": "mint-ui",
+        "style":  true
+      }
+    ]]
+  ]
+}
+
+```
+* main.js
+```js
+// 按需导入mint-ui
+import {Button} from 'mint-ui'
+Vue.component(Button.name, Button)
+```
+
 
