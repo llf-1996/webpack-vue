@@ -10,6 +10,10 @@ import 'mint-ui/lib/style.css'
 // 将MintUI安装到Vue中
 Vue.use(MintUI)
 
+// 导入BootStrap
+import 'bootstrap/dist/css/bootstrap.css'
+
+import './css/app.css'
 import app from './App.vue'
 import router from './router.js'
 
