@@ -12,3 +12,9 @@ cnpm install vue-loader@13 vue-template-compiler@2 -D
 ```bash
 cnpm i vue-router -S
 ```
+
+## mint-ui
+```bash
+cnpm i mint-ui -S
+```
+
