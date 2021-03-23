@@ -21,6 +21,8 @@ import './css/app.css'
 import app from './App.vue'
 import router from './router.js'
 
+// 导入MUI的样式表
+import './lib/mui/css/mui.min.css'
 
 
 var vm = new Vue({

@@ -6,9 +6,16 @@
     <mt-button type="danger" size="small" plain>default</mt-button>
     <mt-button type="danger" size="large" disabled>default</mt-button>
 
-    <router-link to="/account">Account</router-link>
-    <router-link to="/goodslist">Goodslist</router-link>
-    <router-view></router-view>
+    <button type="button" class="mui-btn mui-btn-royal">紫色</button>
+
+    <br><br>
+    <hr>
+    <div>
+      <router-link to="/account">Account</router-link>
+      <router-link to="/goodslist">Goodslist</router-link>
+      <router-view></router-view>
+    </div>
+
   </div>
 </template>
 
