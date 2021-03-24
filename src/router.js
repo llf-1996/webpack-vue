@@ -1,25 +1,20 @@
 import VueRouter from 'vue-router'
 
-import account from './main/Account.vue'
-import goodlist from './main/GoodsList.vue'
-import login from './subcom/login.vue'
-import register from './subcom/register.vue'
-
+import HomeContainer from './components/tabbar/HomeContainer.vue'
+import MemberContainer from './components/tabbar/MemberContainer.vue'
+import SearchContainer from './components/tabbar/SearchContainer.vue'
+import ShopcarContainer from './components/tabbar/ShopcarContainer.vue'
 
 var router = new VueRouter({
   routes: [
-    // accout goodslist
-    {
-      path: '/account',
-      component: account,
-      children: [
-        {path: 'login', component: login},
-        {path: 'register', component: register},
-      ]
-    },
-    {path: '/goodslist', component: goodlist},
-
-  ]
+    {path: '/', redirect: '/home'},
+    {path: '/home', component: HomeContainer},
+    {path: '/member', component: MemberContainer},
+    {path: '/search', component: SearchContainer},
+    {path: '/shopcar', component: ShopcarContainer},
+  ],
+  // 替换默认的router-link-active类为mui-active
+  linkActiveClass: 'mui-active'
 })
 
 export default router
