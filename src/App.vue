@@ -1,58 +1,42 @@
 <template>
-  <div>
-    <div>App组件</div>
-    <mt-button type="danger" icon="back" @click="show">点我</mt-button>
-    <mt-button type="danger" icon="more">default</mt-button>
-    <mt-button type="danger" size="small" plain>default</mt-button>
-    <mt-button type="danger" size="large" disabled>default</mt-button>
-
-    <button type="button" class="mui-btn mui-btn-royal">紫色</button>
-
-    <br><br>
-    <hr>
-    <div>
-      <router-link to="/account">Account</router-link>
-      <router-link to="/goodslist">Goodslist</router-link>
-      <router-view></router-view>
-    </div>
+  <div class="app-container">
+    <!-- 顶部Header区域 -->
+    <mt-header fixed title="黑马程序员 Vue项目"></mt-header>
+    <!-- 路由router-view区域 -->
+    <!-- 底部tabbar区域 -->
+    <nav class="mui-bar mui-bar-tab">
+      <a class="mui-tab-item mui-active" href="#tabbar">
+        <span class="mui-icon mui-icon-home"></span>
+        <span class="mui-tab-label">首页</span>
+      </a>
+      <a class="mui-tab-item" href="#tabbar-with-chat">
+        <span class="mui-icon mui-icon-contact"></span>
+        <span class="mui-tab-label">会员</span>
+      </a>
+      <a class="mui-tab-item" href="#tabbar-with-contact">
+        <span class="mui-icon mui-icon-extra mui-icon-extra-cart"><span class="mui-badge">9</span></span>
+        <span class="mui-tab-label">购物车</span>
+      </a>
+      <a class="mui-tab-item" href="#tabbar-with-map">
+        <span class="mui-icon mui-icon-search"></span>
+        <span class="mui-tab-label">搜索</span>
+      </a>
+    </nav>
 
   </div>
 </template>
 
 <script>
-  // 按需导入Toast
-  import {Toast} from 'mint-ui'
   export default {
     data() {
-      return {
-        toastInstanse: null
-      }
+      return {}
     },
-    created () {
-      this.getList()
-    },
-    methods: {
-      getList () {
-        this.show();
-        setTimeout(() => {
-          this.toastInstanse.close()
-        }, 3000)
-      },
-      show() {
-        // Toast('提示信息')
-        this.toastInstanse = Toast({
-          message: '消息',
-          // 显示时间，单位毫秒
-          duration: -1,
-          position: 'top',
-          iconClass: 'glyphicon glyphicon-heart',
-          className: 'mytoast'
-        });
-      }
-    }
+    methods: {}
   }
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+.app-container {
+  padding-top: 40px;
+}
 </style>
