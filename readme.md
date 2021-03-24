@@ -1,3 +1,10 @@
+## 项目启动
+```bash
+cnpm i
+npm run dev
+```
+
+
 ## 安装vue
 ```bash
 cnm install vue@2
