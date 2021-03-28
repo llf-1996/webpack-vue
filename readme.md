@@ -51,4 +51,8 @@ import {Button} from 'mint-ui'
 Vue.component(Button.name, Button)
 ```
 
+## 安装vue-resource
+```bash
+cnm install vue-resource@1 -S
+```
 
